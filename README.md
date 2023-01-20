@@ -27,9 +27,9 @@ My target was to use the Pushshift API to gather 5,000 posts from each of the su
 
 However, there were data collection challenges. Following some recent updates with the Pushshift API, its data only went as far back as November 2022. This was not a problem for the `r/cars` subreddit where I was able to pull 5000 posts. But for the `r/electricvehicles` subreddit - which has almost 20 times fewer members than its `r/cars` counterpart, there wasn't up to 5000 posts dating back to November. Hence, I was only able to collect 3660 posts from there. Combined, this brought my uncleaned dataset to 8660 rows. In the data folder for this project, I have the following files:
 
-* [`cars_unclean.csv`](./datasets/cars_unclean.csv) - which contains the 5000 rows collected from the cars subreddit. 
-* [`ev_unclean.csv`](./datasets/ev_unclean.csv) - which contains the 3660 rows collected from the electricvehicles subreddit.  
-* [`ev_cars_unclean.csv`](./datasets/ev_cars_unclean.csv) - which contains the 8660 combined rows from the two aforementioned docs. 
+* [`cars_unclean.csv`]('./datasets/cars_unclean.csv') - which contains the 5000 rows collected from the cars subreddit. 
+* [`ev_unclean.csv`]('./datasets/ev_unclean.csv') - which contains the 3660 rows collected from the electricvehicles subreddit.  
+* [`ev_cars_unclean.csv`](''./datasets/ev_cars_unclean.csv) - which contains the 8660 combined rows from the two aforementioned docs. 
 * [`ev_cars_clean.csv`](./datasets/ev_cars_clean.csv) - which contains the 7447 rows that remained after cleaning the dataset. This is the file that was used for my EDA, analysis and modeling. 
 
 ## Data Dictionary
