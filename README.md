@@ -2,9 +2,9 @@
 
 ## Problem Statement
 
-[`Rivian`](https://rivian.com/), a leading electric vehicle manufacturer in the United States, has hired me to perform a sentiment analysis of two `subreddits` - `r/cars` and `r/electricvehicles` - which it actively monitors on the popular Reddit platform. The problem is that the data previously collected before I was hired were not properly labelled, and so we do not know which of those unlabelled posts came from either subreddit. We do not wish to discard the unlabelled data because they are a substantial number, and due to some issues with [Pushshift's](https://github.com/pushshift/api) API, it was no longer possible to get data earlier than November. My boss has therefore asked me to do the following:
+[`Rivian`](https://rivian.com/), a leading electric vehicle manufacturer in the United States, has hired me to perform a sentiment analysis of two `subreddits` - `r/cars` and `r/electricvehicles` - which it actively monitors on the popular Reddit platform. The problem is that the data previously collected before I was hired were not properly labelled, and so we do not know which of those unlabelled posts came from either subreddit. We do not wish to discard the unlabelled data because they are a substantial number, and were collected several months ago at a time when `Rivian` was on the news for a host of reasons. Due to some ongoing updates to the [Pushshift's](https://github.com/pushshift/api) API, posts earlier than November 2022 are not available to be collected. My boss has therefore asked me to do the following:
 
-1. Collect more data from the two subreddits, using [Pushshift's](https://github.com/pushshift/api) API.
+1. Collect more recent data from the two subreddits, using [Pushshift's](https://github.com/pushshift/api) API.
 2. Use Natural Language Processing to train a classifier on which subreddit a given post came from. This is a binary classification problem and I attempt several models and ensembles.
 3. In future, I can then use my best model to classify the unlabelled posts we have as belonging to either the `r/cars` or `r/electricvehicles` subreddits, and then carry out a sentiment analysis. (This third point is not covered in this project). 
 4. Make a presentation to him and the rest of the team outlining my process and findings.
